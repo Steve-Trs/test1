@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://registry.npmjs.org/vanilla-tilt/-/vanilla-tilt-1.8.1.tgz">
+    <script src="/node_modules/vanilla-tilt/dist/vanilla-tilt.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="burger-menu">
+        <div class="line l1"></div>
+        <div class="line l2"></div>
+        <div class="line l3"></div>
+      </div>
+      <div class="navbar">
+        <p class="title">LOGO</p>
+        <ul class="navlinks">
+          <a href="#services" class="navlink">Services</a>
+          <a href="#contact" class="navlink">Contact</a>
+          <a href="#reviews" class="navlink">Reviews</a>
+          <a href="#about" class="navlink">About</a>
+        </ul>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="box-intro">
+        <h1 class="title-intro">Personal Training</h1>
+        <p class="p1-intro">If it doesn't challenge you. It doesn't change you.</p>
+        <p class="p2-intro">find better quote and background</p>
+       </div>
+    </section>
+
+    <section class="carousel" id="services">
+      <div class="title-section-services">
+        <span class="title-services">What we do</span>
+      </div>
+      <div class="carousel-container">
+        <input
+          type="radio"
+          name="carousel-slider"
+          class="invisible"
+          id="s1"
+          checked
+        />
+        <input type="radio" name="carousel-slider" class="invisible" id="s2" />
+        <input type="radio" name="carousel-slider" class="invisible" id="s3" />
+        <input type="radio" name="carousel-slider" class="invisible" id="s4" />
+        <input type="radio" name="carousel-slider" class="invisible" id="s5" />
+
+        <div class="cards">
+          <label for="s1" id="slide1">
+            <div class="card">
+              <div class="image">
+                <img src="../assets/img/barbell.jpg" alt="barbell" />
+              </div>
+              <div class="infos">
+                <span class="service-title">Strength</span>
+                <span class="info"
+                  >Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean
+                  vel ansd . Nullam lorem. Nulla eu sodales</span
+                >
+              </div>
+              <a href="/book-now-pages/index-book-now.html" class="btn-contact" id="bookNowButton">Book Now</a>
+            </div>
+          </label>
+
+          <label for="s2" id="slide2">
+            <div class="card">
+              <div class="image">
+                <img src="../assets/img/delete.svg" alt="delete" />
+              </div>
+              <div class="infos">
+                <span class="service-title">whatever</span>
+                <span class="info"
+                  >Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean
+                  vel ansd . Nullam lorem. Nulla eu sodales</span
+                >
+              </div>
+              <a href="www.google.com" id="bookNowButton" class="btn-contact">Book Now</a>
+            </div>
+          </label>
+
+          <label for="s3" id="slide3">
+            <div class="card">
+              <div class="image">
+                <img src="../assets/img/facebook.svg" alt="facebook" />
+              </div>
+              <div class="infos">
+                <span class="service-title">whatever</span>
+                <span class="info"
+                  >Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean
+                  vel ansd . Nullam lorem. Nulla eu sodales</span
+                >
+              </div>
+              <a href="/contact" class="btn-contact">Book Now</a>
+            </div>
+          </label>
+
+          <label for="s4" id="slide4">
+            <div class="card">
+              <div class="image">
+                <img src="../assets/img/instagram.svg" alt="instagram" />
+              </div>
+              <div class="infos">
+                <span class="service-title">whatever</span>
+                <span class="info"
+                  >Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean
+                  vel ansd . Nullam lorem. Nulla eu sodales</span
+                >
+              </div>
+              <a href="/contact" class="btn-contact">Book Now</a>
+            </div>
+          </label>
+
+          <label for="s5" id="slide5">
+            <div class="card">
+              <div class="image">
+                <img src="/assets/img/barbell.jpg" alt="barbell" />
+              </div>
+              <div class="infos">
+                <span class="service-title">group 4 max</span>
+                <span class="info"
+                  >Lorem ipsum dolor sit amet, sit amet adipiscing elit. Aenean
+                  vel ansd . Nullam lorem. Nulla eu sodales</span
+                >
+              </div>
+              <a href="/contact" class="btn-contact">Book Now</a>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="title-contact">
+        <span class="contact-form-title">
+        Get in touch</span>
+      </div>
+      <div class="container-contact">
+        <div class="contact-pic js-tilt" data-tilt>
+          <img src="/assets/img/email-laptop.svg" alt="IMG">
+        </div>
+       <form class="contact-form" id="contact--form">
+        
+        <div class="div-input-contact" data-validate="Name is required">
+          <input class="name-input  inputcontact" type="text" name="name" placeholder="Name *">
+          
+        </div>
+        <div class="div-input-contact" data-validate="Valid email is required: ex@abc.xyz">
+          <input class="email-input  inputcontact" type="text" name="email" placeholder="Email *">
+          
+        </div>
+        <div class="div-input-contact" data-validate="Subject is required">
+          <input class="subject-input  inputcontact" type="text" name="subject" placeholder="Subject *">
+          
+        </div>
+          <div class="div-input-contact" data-validate="Message is required">
+        <textarea class="textarea-input  inputcontact" name="message" placeholder="Message *" cols="50" rows="8"></textarea>
+          </div>
+          <p class="required">* Required field</p>
+        <div class="container-contact-form-btn">
+          <button type="submit" class="contact-form-btn">
+            <span class="btn-send">Send Email</span>
+          </button>
+        </div>
+       </form>
+      </div>    
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="title-reviews">
+       <span class="title-testimonial">Testimonial</span>
+      </div>
+      <div class="slider-container">
+        <div class="box-all-reviews">
+          <div class="review-box">
+            <div class="photo-author">
+              <img
+                src="instagram.svg"
+                alt=""
+                class="pic-author"
+                accept="image/*"
+              />
+            </div>
+            <div class="box-content-text">
+              <span class="quote-left">"</span>
+              <p class="review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                cupiditate? Aspernatur, labore quas accusamus, ad, recusandae
+                cum cu.
+              </p>
+              <!-- Edit Form -->
+              <form class="edit-form" style="display: none">
+                <textarea class="edit-textarea" rows="3">
+Original comment text</textarea
+                >
+                <button type="submit" class="update-button">Update</button>
+              </form>
+              <!-- ... -->
+              <span class="quote-right">"</span>
+              <span class="name-author">gingi ginga</span>
+            </div>
+            <div class="date-and-actions">
+              <div class="date-review">
+                <span class="date">19/08/2023</span>
+              </div>
+              <div class="actions-review">
+                <button class="edit-comment">edit</button>
+                <button class="delete-comment">x</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-btn">
+        <button class="go-first-btn"><<</button>
+        <button class="slider-prev-btn">Prev</button>
+        <button class="slider-next-btn">Next</button>
+        <button class="go-last-btn">>></button>
+      </div>
+      <div class="box-add-comment">
+        <p class="p1">Tell us about your experience...</p>
+        <a href="#" class="link-input-form" id="show-form-link">(Click here)</a>
+        <form action="" class="input-form" id="comment-form">
+          <textarea
+            name="add-new-comment"
+            type="text"
+            class="new-comment"
+            placeholder="Leave a comment"
+            cols="40" rows="5"
+          /></textarea>
+          <input type="text" class="new-name" placeholder="Your Name" />
+          <input type="file" class="new-picture" accept="image/*" />
+        <div class="btn-comment"> 
+            <button class="submit-comment">Submit</button>
+            <button id="cancel-form">Cancel</button>
+        </div>
+        </form> 
+        <p class="p2">...We would love to hear from you!</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="title-about">
+        <span>About Us</span>
+      </div>
+     <div class="boxes-about">
+      <div class="box-about-img">
+        <img src="../assets/img/barbell.jpg" alt="delete" class="about-image" />
+      
+        <span>Who are we?</span>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eos
+        atque, quis ab sunt enim repudiandae nesciunt distinctio, quod quasi
+        quia aliquid consequatur assumenda voluptas, voluptatum temporibus.
+        Deleniti, temporibus dicta. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Accusantium voluptate corporis obcaecati laudantium,
+       </p>
+       <span>Our philosophy:</span>
+       <p> beatae. Modi, molestiae perferendis. Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. Aut impedit necessitatibus ducimus
+        recusandae
+       </p>
+       <span>What to expect when training with us:</span>
+       <p>suscipit tempora maxime harum tenetur enim dolores, iure quas
+        libero, non officiis fugit iusto hic sed nisi? Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Voluptas sint omnis atque aliquid
+        exercitationem, ducimus mollitia nostrum, praesentium earum inventore,
+        eligendi cupiditate nemo? Nostrum quisquam fugiat cum eligendi quasi
+        autem.
+         </p>
+       
+      </div>
+    </section>
+    <footer>
+      <div class="connect">
+       <span>Connect with us</span>
+      </div>
+      <ul class="social-links">
+        <a href="#" class="insta-link" id="icon"
+          ><img src="../assets/img/instagram.svg" alt="instagram"
+        /></a>
+        <a href="#" class="fb-link" id="icon"
+          ><img src="../assets/img/facebook.svg" alt="facebook"
+        /></a>
+        <a href="#" class="email-link" id="icon"
+          ><img src="../assets/img/email.svg" alt="email"
+        /></a>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
